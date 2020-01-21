@@ -1,0 +1,476 @@
+* {box-sizing: border-box;}
+
+html, body {font-family: sans-serif;
+font-size: 15px;
+    line-height: 1.5;
+}
+
+/*Responsive colums*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* For mobile phones*/
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+/*For tablets*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+/* For desktop*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+/*Topnav*/
+.container {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    float: left;
+    z-index: 1;
+   
+   
+}
+.ola-show {
+    display: block;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+    float: left;
+    padding: 12px 20px;
+    text-align: left; 
+    font-size: 20px;
+}
+
+.drop {
+    overflow: hidden;
+    float: left;
+}
+
+.drop-btn {
+    border: none;
+    outline: none;
+    padding: 16px 20px;
+    color: white;
+    background-color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.drop-content {
+    box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1;
+    font-size: 17px;
+    min-width: 180px;
+    position: absolute;
+    
+    background-color: white;
+    
+
+}
+
+.drop-content a {
+    float: none;
+    display: block;
+    color: black;
+}
+
+.drop:hover .drop-content {
+    display: block;
+}
+
+.container a:hover, .drop:hover .drop-btn {
+    background-color: #ddd;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.container .icon {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container a:not(:first-child) {display: none;}
+    
+    .text {display: none;}
+    .container a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container.responsive {position: relative;} 
+    .container.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .container.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/*Slide show*/
+.slideshow-container {
+   margin: auto;
+    position: relative;
+   
+   
+}
+
+.text {
+    
+    text-align: center;
+    position: absolute;
+    color: white;
+    bottom: 40px;
+    width: 100%;
+    padding: 8px 12px ;
+    font-size: 20px;
+}
+
+/*Band section*/
+.container-text {
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px!important;
+    margin: auto;
+    padding-right: 16px;
+    padding-left: 16px;   
+}
+
+.text-band {
+    letter-spacing: 4px;
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.text-opacity {
+    color: rgba(100,100,100,0.6);
+    margin: 16px 0px;
+    
+}
+.text-justify {
+    text-align: justify;
+    font-weight: 500;
+    
+}
+.padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+}
+.ola-img {
+    margin-bottom: 16px!important;
+    border-radius: 4px;
+    border-style: none;
+}
+.ola-name {
+    padding-bottom: 25px;
+    font-size: 16px;
+}
+
+/*the tour section*/
+.ola-black {
+    background-color: black;
+}
+.container-band {
+    margin: auto;
+    padding-top: 64px!important;
+    padding-bottom: 64!important;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.ola-wide {
+    letter-spacing: 4px;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ola-center {
+    text-align: center!important;
+}
+.ola-opacity {
+    opacity: 0.6;
+    color: white;
+}
+.ola-ul {
+    list-style-type: none;
+    background-color: white;
+    padding: 0px;
+}
+.ola-border {
+    border: 1px solid #ccc!important;
+}
+.ola-tag {
+    background-color: #f44336;
+    margin-left: 16px;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    color: white;
+}
+.ola-pad {
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+}
+.ola-3 {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    padding: 4.6px;
+    float: right;
+}
+.ola-topdown {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.margin-16 {
+    padding: 8px;
+}
+.ola-container {
+    color: black;
+    background-color: #fff;
+    padding: 0.01em 16px;
+    
+}
+.ny-tour {
+    padding: 16px 16px;
+}
+.ola-opa {
+    opacity: 0.6
+}
+.ola-hover-opacity {
+    border-style: none;
+    margin-bottom: -5px;
+   
+}
+
+.img-hover:hover{
+    opacity: 0.6;
+    background-color: #ccc;
+}
+
+
+.ola-button {
+    border:none;
+    outline: none;
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: black;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.ola-button:hover {
+    background-color: #ccc;
+}
+.ola-modal {
+    color: white;
+    padding-top: 50px;
+    position: fixed;
+    left: 0px;
+    display: none;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+.ola-animation {
+    position: relative;
+    animation: animationtop 0.4s;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2), 0px 4px 20px 0px rgba(0,0,0,0.19);
+    
+}
+.ola-color {
+     background-color: #099688;
+    padding: 8px 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin: 0;
+    overflow: hidden;
+    
+}
+.ola-span {
+    color: white;
+    background-color: #099688;
+    font-size: 24px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+.ola-right{
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    
+}
+.ola-content {
+    padding: 0.01em 16px;
+}
+.ola-input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    margin: 0;
+    overflow: visible;
+    
+}
+.ola-button1 {
+    color: white;
+    background-color: #009688;
+    float: right;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ola-button2 {
+    color: #fff;
+    background-color: #f44336;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;  
+}
+.ola-need {
+    float: right;
+}
+.color-help {
+    color: #2196f3;
+    background-color: transparent;
+}
+.ola-contact {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding: 0.01em 16px;
+    margin: auto;
+}
+.ola-contact1 {
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+}
+.ola-fan {
+    text-align: center;
+    opacity: 0.6;
+}
+.ola-row {
+    padding: 0 8px;
+}
+.ola-half {
+    padding: 0 8px;
+    float: left;
+    width: 100%;
+}
+.ola-input5 {
+    border: 1px solid #ccc;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    overflow: visible;
+    margin: 0;
+    
+}
+.send9 {
+    color: #fff;
+    background-color: #000;
+    float: right;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    padding: 8px 16px;
+    overflow: hidden;
+    cursor: pointer;
+    white-space: nowrap; 
+}
+.ola-footer {
+    color: #000;
+    background-color: #f1f1f1;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+    font-size: 16px;
+}
